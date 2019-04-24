@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kello</title>
+    <style>
+        .sec{
+            background-color: red;
+            transform-origin: 50% 99%;
+            width:2px;
+            height: 30vmin;
+            transform: translateX(50vw) translateY(20vmin);
+            position: absolute;
+        }
+        .min{
+            background-color: black;
+            transform-origin: 50% 99%;
+            width:3px;
+            height: 30vmin;
+            transform: translateX(50vw) translateY(20vmin);
+            position: absolute;
+        }
+        .hour{
+            background-color: black;
+            transform-origin: 50% 99%;
+            width:10px;
+            height: 20vmin;
+            transform: translateX(50vw) translateY(30vmin);
+            position: absolute;
+        }
+        .center{
+            background-color: black;
+            width:40px;
+            height: 40px;
+            border-radius: 50%;
+            top: calc(50vmin - 10px);
+            left: calc(50vw - 10px);
+            position: absolute;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="hour"></div>
+    <div class="min"></div>
+    <div class="sec"></div>
+    <div class="center"></div>
+    <script src="index.js"></script>
+</body>
+</html>
